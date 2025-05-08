@@ -4,9 +4,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 # Generate hex area
-hex_ids = []
+hex_ids = ["8838412f3dfffff"]
 op = Options()
-op.add_argument('--headless')
+#op.add_argument('--headless')
 # Setup Selenium
 driver = webdriver.Chrome(options=op)
 driver.get("https://www.google.com/maps")
