@@ -155,7 +155,7 @@ def scrapData(driver, storetype, city, allowed_hexes):
                 parts = c2desc.split("·")
                 store_type = parts[0].strip()
                 address = parts[1].split("\n")[0].strip() if len(parts) > 1 else ""
-
+                print(f"scrapped {name}")
                 results.append({
                     'Store Name': name,
                     'Address': address,
